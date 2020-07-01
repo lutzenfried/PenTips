@@ -1,4 +1,4 @@
-# Pentips
+# PenTips
 Usefull penetration testing tips
 
 ##### Tomcat 
