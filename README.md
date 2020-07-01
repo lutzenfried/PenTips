@@ -1,0 +1,2 @@
+# bashTips
+Usefull bash oneliner
