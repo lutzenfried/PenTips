@@ -1,10 +1,9 @@
 # PenTips
-Daily penetration testing tips
+Daily offensive security & penetration testing tips
 
 ### Tip 1
 ##### Tomcat
 **Subject** : Deploy a new application archive (WAR) remotely without manager-gui role using curl.
-
 <br/>Required roles : **manager-script** (tomcat-users.xml).
 <br/>(By default, no user is included in the "manager-gui" role required to operate the "/manager/html" web application).
 
