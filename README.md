@@ -1,5 +1,5 @@
 # PenTips
-Daily offensive security & penetration testing tips
+Offensive security & penetration testing tips
 
 ### Tip 1
 ##### Tomcat
